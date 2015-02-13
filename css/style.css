@@ -8,6 +8,7 @@ input, textarea {
     border-radius: 7px 7px 7px 7px;
     -moz-border-radius: 7px 7px 7px 7px;
     -webkit-border: 7px 7px 7px 7px;
+    /*text-align: left;*/
 }
 
 .principal {
@@ -25,4 +26,10 @@ input, textarea {
   border-radius: 7px 7px 7px 7px;
   -moz-border-radius: 7px 7px 7px 7px;
   -webkit-border: 7px 7px 7px 7px;
+}
+
+#divtable {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
 }

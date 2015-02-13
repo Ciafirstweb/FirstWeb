@@ -119,6 +119,14 @@ form1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:FirstWeb.clientes.lblErro">
+	<summary>
+lblErro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:FirstWeb.clientes.imgbtnAdicionar">
 	<summary>
 imgbtnAdicionar control.
@@ -162,6 +170,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:FirstWeb.clientes.imgbtnVoltar">
 	<summary>
 imgbtnVoltar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.clientes.dgvCliente">
+	<summary>
+dgvCliente control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -223,9 +239,9 @@ lblCPF control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.clientes.txtCPF">
+</member><member name="F:FirstWeb.clientes.txtDocumento">
 	<summary>
-txtCPF control.
+txtDocumento control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -311,6 +327,14 @@ txtCEP control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:FirstWeb.clientes.btnBuscaCEP">
+	<summary>
+btnBuscaCEP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:FirstWeb.clientes.lblLogradouro">
 	<summary>
 lblLogradouro control.
@@ -351,9 +375,9 @@ lblNumero control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.clientes.txtNumero">
+</member><member name="F:FirstWeb.clientes.txtN">
 	<summary>
-txtNumero control.
+txtN control.
 </summary>
 	<remarks>
 Auto-generated field.

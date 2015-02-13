@@ -37,7 +37,10 @@ p {
 }
 
 img {
-    border: 0;
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    text-align: left;
 }
 
 h1 {
