@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/principal/Site.Master" CodeBehind="clientes.aspx.vb" Inherits="FirstWeb.clientes" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/principal/Site.Master" CodeBehind="fornecedores.aspx.vb" Inherits="FirstWeb.fornecedores" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server" style="height: 100%">
         <asp:Label ID="lblErro" runat="server" Text=""></asp:Label>
@@ -14,13 +14,13 @@
                  <tr><td><asp:ImageButton ID="imgbtnVoltar" runat="server"  ImageUrl="../images/icons/sair.png" />Voltar</td></tr>
              </table>
          </div>     
-        <asp:GridView ID="dgvCliente" runat="server" AutoGenerateColumns="False">
+        <asp:GridView ID="dgvFornecedor" runat="server" AutoGenerateColumns="False">
                 <Columns>
                     <asp:CommandField HeaderText="Selecionar" ShowCancelButton="False" ShowSelectButton="True" />
                     <asp:BoundField DataField="Cod" HeaderText="Cod" />
                     <asp:BoundField DataField="Documento" HeaderText="Doc" />
-                    <asp:BoundField DataField="Nome" HeaderText="Nome" />
-                    <asp:BoundField DataField="Apelido" HeaderText="Apelido" />
+                    <asp:BoundField DataField="razao" HeaderText="Razão" />
+                    <asp:BoundField DataField="fantasia" HeaderText="Fantasia" />
                     <asp:BoundField DataField="endereco.CEP" HeaderText="CEP" Visible="False"/>
                     <asp:BoundField DataField="Status" HeaderText="Status" />
                 </Columns>            
@@ -33,8 +33,8 @@
                 <tr>
                     <td><asp:Label ID="lblDocumento" runat="server" Text="Documento:"></asp:Label></td>
                     <td><asp:DropDownList ID="ddlDocumento" class="drop" runat="server" Width="175px">
-                        <asp:ListItem>CPF</asp:ListItem>
                         <asp:ListItem>CNPJ</asp:ListItem>
+                        <asp:ListItem>CPF</asp:ListItem>
                         </asp:DropDownList></td>
                 </tr>
                 <tr>
@@ -52,17 +52,17 @@
             <table style="text-align:right; width: 750px" >
                 <tr>
                     <td><asp:Label ID="lblCodigo" runat="server" Text="Código:"></asp:Label></td>
-                    <td><asp:TextBox ID="txtCodigo" runat="server" Width="450px" TabIndex="2" type="number" Enabled="False"></asp:TextBox></td>        
+                    <td><asp:TextBox ID="txtCodigo" runat="server" Width="320px" TabIndex="2" type="number" Enabled="False"></asp:TextBox></td>        
                     <td><asp:Label ID="lblCPF" runat="server" Text="Documento:"></asp:Label></td>         
                     <td><asp:TextBox ID="txtDocumento" runat="server" Width="200px" TabIndex="3" BackColor="#E6E6E6"></asp:TextBox></td>
                 </tr>
                 <tr>
-                    <td><asp:Label ID="lblNome" runat="server" Text="Nome:"></asp:Label></TD>
-                    <td colspan="4"><asp:TextBox ID="txtNome" runat="server" TabIndex="4" Width="767px" BackColor="#E6E6E6"></asp:TextBox></td>
+                    <td><asp:Label ID="lblRazao" runat="server" Text="R. Social:"></asp:Label></TD>
+                    <td colspan="4"><asp:TextBox ID="txtRazao" runat="server" TabIndex="4" Width="635px" BackColor="#E6E6E6"></asp:TextBox></td>
                 </tr>
                 <tr>
-                    <td><asp:Label ID="lblApelido" runat="server" Text="Apelido:"></asp:Label></td>
-                    <td><asp:TextBox ID="txtApelido" runat="server" Width="450px" TabIndex="5" BackColor="#E6E6E6"></asp:TextBox></td>
+                    <td><asp:Label ID="lblFantasia" runat="server" Text="N. Fantasia:"></asp:Label></td>
+                    <td><asp:TextBox ID="txtFantasia" runat="server" Width="320px" TabIndex="5" BackColor="#E6E6E6"></asp:TextBox></td>
                     <td><asp:Label ID="lblNascimento" runat="server" Text="Nascimento:" Visible="False"></asp:Label></td>
                     <td><asp:TextBox ID="txtNascimento" runat="server" Width="200px" TabIndex="6" Visible="False"></asp:TextBox></td>
                 </tr>

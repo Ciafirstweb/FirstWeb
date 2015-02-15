@@ -8,7 +8,7 @@ input, textarea {
     border-radius: 7px 7px 7px 7px;
     -moz-border-radius: 7px 7px 7px 7px;
     -webkit-border: 7px 7px 7px 7px;
-    /*text-align: left;*/
+    text-align: left;
 }
 
 .principal {
