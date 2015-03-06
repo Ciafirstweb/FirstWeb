@@ -6,15 +6,7 @@ FirstWeb
 </name>
 </assembly>
 <members>
-<member name="F:FirstWeb.fornecedores.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FirstWeb.fornecedores.lblErro">
+<member name="F:FirstWeb.fornecedores.lblErro">
 	<summary>
 lblErro control.
 </summary>
@@ -65,6 +57,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:FirstWeb.fornecedores.imgbtnVoltar">
 	<summary>
 imgbtnVoltar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.fornecedores.pnlGrid">
+	<summary>
+pnlGrid control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -174,22 +174,6 @@ txtFantasia control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.fornecedores.lblNascimento">
-	<summary>
-lblNascimento control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FirstWeb.fornecedores.txtNascimento">
-	<summary>
-txtNascimento control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:FirstWeb.fornecedores.lblEndereco">
 	<summary>
 lblEndereco control.
@@ -217,14 +201,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:FirstWeb.fornecedores.txtCEP">
 	<summary>
 txtCEP control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FirstWeb.fornecedores.btnBuscaCEP">
-	<summary>
-btnBuscaCEP control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -422,17 +398,25 @@ txtFax control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.Site.ContentPlaceHolder1">
+</member><member name="F:FirstWeb.Site.HeadContent">
 	<summary>
-ContentPlaceHolder1 control.
+HeadContent control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.produtos.form1">
+</member><member name="F:FirstWeb.Site.form1">
 	<summary>
 form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.Site.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -494,9 +478,17 @@ imgbtnVoltar control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.produtos.dgvCliente">
+</member><member name="F:FirstWeb.produtos.pnlProduto">
 	<summary>
-dgvCliente control.
+pnlProduto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.produtos.dgvProduto">
+	<summary>
+dgvProduto control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -766,9 +758,9 @@ lblDtCadastro control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.produtos.txtDtCadastro">
+</member><member name="F:FirstWeb.produtos.txtDt_Cadastro">
 	<summary>
-txtDtCadastro control.
+txtDt_Cadastro control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -782,9 +774,25 @@ lblEstMin control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.produtos.txtEstMin">
+</member><member name="F:FirstWeb.produtos.txtEst_Min">
 	<summary>
-txtEstMin control.
+txtEst_Min control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.produtos.lblStatus">
+	<summary>
+lblStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.produtos.ddlStatus">
+	<summary>
+ddlStatus control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -798,9 +806,9 @@ lblDtAtualização control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.produtos.txtDtAtualização">
+</member><member name="F:FirstWeb.produtos.txtDt_Atualizacao">
 	<summary>
-txtDtAtualização control.
+txtDt_Atualizacao control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -814,9 +822,9 @@ lblEstAtual control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.produtos.txtEstAtual">
+</member><member name="F:FirstWeb.produtos.txtEst_Atual">
 	<summary>
-txtEstAtual control.
+txtEst_Atual control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -830,9 +838,9 @@ lblEntrega control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.produtos.txtEntrega">
+</member><member name="F:FirstWeb.produtos.ddlEntrega">
 	<summary>
-txtEntrega control.
+ddlEntrega control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -846,9 +854,769 @@ lblEstFisico control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.produtos.txtEstFisico">
+</member><member name="F:FirstWeb.produtos.txtEst_Fisico">
 	<summary>
-txtEstFisico control.
+txtEst_Fisico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblErro">
+	<summary>
+lblErro control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.imgbtnAdicionar">
+	<summary>
+imgbtnAdicionar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.imgbtnRemover">
+	<summary>
+imgbtnRemover control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.imgbtnEditar">
+	<summary>
+imgbtnEditar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.imgbtnCancelar">
+	<summary>
+imgbtnCancelar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.imgbtnCliente">
+	<summary>
+imgbtnCliente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.imgbtnPedido">
+	<summary>
+imgbtnPedido control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.imgbtnImprimir">
+	<summary>
+imgbtnImprimir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.btnCliente">
+	<summary>
+btnCliente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.btnProduto">
+	<summary>
+btnProduto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.btnPagamento">
+	<summary>
+btnPagamento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblPedido">
+	<summary>
+lblPedido control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtPedido">
+	<summary>
+txtPedido control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblData">
+	<summary>
+lblData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtData">
+	<summary>
+txtData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblTipo">
+	<summary>
+lblTipo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.ddlTipo">
+	<summary>
+ddlTipo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.pnlCliente">
+	<summary>
+pnlCliente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblCodigo">
+	<summary>
+lblCodigo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtCodigo">
+	<summary>
+txtCodigo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblNome">
+	<summary>
+lblNome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtNome">
+	<summary>
+txtNome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblDocumento">
+	<summary>
+lblDocumento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtDocumento">
+	<summary>
+txtDocumento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblEmail">
+	<summary>
+lblEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtEmail">
+	<summary>
+txtEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblTelefone">
+	<summary>
+lblTelefone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtTelefone">
+	<summary>
+txtTelefone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblCEP">
+	<summary>
+lblCEP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtCEP">
+	<summary>
+txtCEP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblEndereco">
+	<summary>
+lblEndereco control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtEndereco">
+	<summary>
+txtEndereco control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblNumero">
+	<summary>
+lblNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtNumero">
+	<summary>
+txtNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblComplemento">
+	<summary>
+lblComplemento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtComplemento">
+	<summary>
+txtComplemento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblModelo">
+	<summary>
+lblModelo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtModelo">
+	<summary>
+txtModelo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.pnlProdutos">
+	<summary>
+pnlProdutos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.dgvProduto">
+	<summary>
+dgvProduto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.pnlProduto">
+	<summary>
+pnlProduto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblInt">
+	<summary>
+lblInt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtInt">
+	<summary>
+txtInt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblCol">
+	<summary>
+lblCol control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtCol">
+	<summary>
+txtCol control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblExt">
+	<summary>
+lblExt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtExt">
+	<summary>
+txtExt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblAltCab">
+	<summary>
+lblAltCab control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtAltCab">
+	<summary>
+txtAltCab control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblAcessorios">
+	<summary>
+lblAcessorios control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.ddlAcessorios">
+	<summary>
+ddlAcessorios control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblValor">
+	<summary>
+lblValor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtValor">
+	<summary>
+txtValor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblQuantidade">
+	<summary>
+lblQuantidade control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtQuantidade">
+	<summary>
+txtQuantidade control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblDescricao">
+	<summary>
+lblDescricao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtDescricao">
+	<summary>
+txtDescricao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblVendedor">
+	<summary>
+lblVendedor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.ddlVendedor">
+	<summary>
+ddlVendedor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblTotalProduto">
+	<summary>
+lblTotalProduto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtTotalProduto">
+	<summary>
+txtTotalProduto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblObservacao">
+	<summary>
+lblObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtObservacao">
+	<summary>
+txtObservacao control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblEntrega">
+	<summary>
+lblEntrega control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtEntrega">
+	<summary>
+txtEntrega control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.pnlCarrinho">
+	<summary>
+pnlCarrinho control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.gdvCarrinho">
+	<summary>
+gdvCarrinho control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.pnlPagamento">
+	<summary>
+pnlPagamento control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblForma">
+	<summary>
+lblForma control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.ddlForma">
+	<summary>
+ddlForma control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblTituloParcelado">
+	<summary>
+lblTituloParcelado control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblTituloCheque">
+	<summary>
+lblTituloCheque control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblTituloPedido">
+	<summary>
+lblTituloPedido control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblParceladoValor">
+	<summary>
+lblParceladoValor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtParceladoValor">
+	<summary>
+txtParceladoValor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblChequeBanco">
+	<summary>
+lblChequeBanco control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtChequeBanco">
+	<summary>
+txtChequeBanco control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblPedidoValor">
+	<summary>
+lblPedidoValor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtPedidoValor">
+	<summary>
+txtPedidoValor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblParceladoQuantidade">
+	<summary>
+lblParceladoQuantidade control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtParceladoQuantidade">
+	<summary>
+txtParceladoQuantidade control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblChequeAgencia">
+	<summary>
+lblChequeAgencia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtChequeAgencia">
+	<summary>
+txtChequeAgencia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblPedidoDesconto">
+	<summary>
+lblPedidoDesconto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtPedidoDesconto">
+	<summary>
+txtPedidoDesconto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblParceladoTotal">
+	<summary>
+lblParceladoTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtParceladoTotal">
+	<summary>
+txtParceladoTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblChequeNumero">
+	<summary>
+lblChequeNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtChequeNumero">
+	<summary>
+txtChequeNumero control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblPedidoTroco">
+	<summary>
+lblPedidoTroco control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtPedidoTroco">
+	<summary>
+txtPedidoTroco control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblChequeValor">
+	<summary>
+lblChequeValor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtChequeValor">
+	<summary>
+txtChequeValor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblPedidoTotal">
+	<summary>
+lblPedidoTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtPedidoTotal">
+	<summary>
+txtPedidoTotal control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -951,14 +1719,6 @@ imgSair control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:FirstWeb.clientes.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:FirstWeb.clientes.lblErro">
 	<summary>
 lblErro control.
@@ -1010,6 +1770,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:FirstWeb.clientes.imgbtnVoltar">
 	<summary>
 imgbtnVoltar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.clientes.pnlGrid">
+	<summary>
+pnlGrid control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1162,14 +1930,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:FirstWeb.clientes.txtCEP">
 	<summary>
 txtCEP control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:FirstWeb.clientes.btnBuscaCEP">
-	<summary>
-btnBuscaCEP control.
 </summary>
 	<remarks>
 Auto-generated field.

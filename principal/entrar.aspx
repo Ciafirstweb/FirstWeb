@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/principal/Site.Master" CodeBehind="entrar.aspx.vb" Inherits="FirstWeb.entrar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="form1" runat="server">
         <div class="principal">
             <h2>Entrar</h2>
             Usuario:
@@ -11,5 +10,4 @@
             <p><asp:Label ID="lblMsg" runat="server" Width="100%"></asp:Label></p>           
         </div>
         
-    </form>
 </asp:Content>
