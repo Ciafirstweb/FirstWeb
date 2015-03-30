@@ -4,9 +4,6 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#ContentPlaceHolder1_txtCEP').cep({
-                // "done" é o nome da opção do seu callback
-                // Funciona da mesma forma que o método 1
-                // mas aqui você pode adicionar outras opções também
                 done: function (endereco) {
                     endereco.tipo_logradouro = endereco.tipo_logradouro + " " + endereco.logradouro;
                     document.getElementById("ContentPlaceHolder1_txtLogradouro").value = endereco.tipo_logradouro;
@@ -28,7 +25,7 @@
              return t.toString().replace(/\D/g, "").substr(0, 8)
          } function a(t) {
              var a = "", e = n(t);
-             return a = e.length > 5 ? e.substr(0, 5) + "-" + e.substr(5, 3) : e
+             return a = e.length > 5 ? e.substr(0, 5) + e.substr(5, 3) : e
          } function e(n, a) {
              t("[" + a + "]").each(function () {
                  var e = t(this), o = e.attr(a); n[o] && e.val(n[o])
@@ -96,7 +93,7 @@
                 </asp:Panel>
     <br />
     <div style="width: 280px; float: left;">
-        <h4>Tipo</h4>
+        <b>Tipo</b>
 
         <table style="text-align: right;">
             <tr>
@@ -121,7 +118,7 @@
     </div>
 
     <div style="width: 859px; float: left;">
-        <h4>Identificação</h4>
+        <b>Identificação</b>
         <table style="text-align: right; width: 750px">
             <tr>
                 <td>
@@ -149,7 +146,7 @@
     </div>
 
     <div style="width: 990px; float: left;">
-        <h4>Endereço</h4>
+        <b>Endereço</b>
         <table style="text-align: right; width: 750px">
             <tr>
                 <td>
@@ -197,7 +194,7 @@
 
     <div style="width: 990px; float: left;">
         <br />
-        <h4>Contato</h4>
+        <b>Contato</b>
         <table style="text-align: right; width: 750px">
             <tr>
                 <td>

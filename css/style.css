@@ -33,3 +33,14 @@ input, textarea {
     margin-top: 5px;
     margin-right: 20px;
 }
+
+.comment {
+	width: 400px;
+}
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+}

@@ -950,6 +950,22 @@ btnPagamento control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:FirstWeb.pedidos.dgvCliente">
+	<summary>
+dgvCliente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.dgvPedido">
+	<summary>
+dgvPedido control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:FirstWeb.pedidos.lblPedido">
 	<summary>
 lblPedido control.
@@ -1417,6 +1433,22 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:FirstWeb.pedidos.ddlForma">
 	<summary>
 ddlForma control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.lblSubTotal">
+	<summary>
+lblSubTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FirstWeb.pedidos.txtSubTotal">
+	<summary>
+txtSubTotal control.
 </summary>
 	<remarks>
 Auto-generated field.

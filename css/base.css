@@ -15,8 +15,10 @@ html {
 }
 
 * {
-    margin: 0;
     padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
 /* tell the browser to render HTML 5 elements as block */
@@ -46,17 +48,14 @@ img {
 h1 {
     font-size: 180%;
     color: #F67400;
-    padding: 1px 2px 0 2px;
 }
 
 h2 {
     font-size: 160%;
-    padding: 1px 2px 2px 2px;
 }
 
 h3 {
     font-size: 140%;
-    padding: 1px 2px 0 2px;
 }
 
 a, a:hover {

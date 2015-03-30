@@ -82,7 +82,7 @@
         </asp:Panel>
     <br />
     <div style="width: 325px; float: left;">
-        <h4>Identificação</h4>
+        <b>Identificação</b>
         <table style="text-align: right;">
             <tr>
                 <td>
@@ -106,7 +106,7 @@
     </div>
 
     <div style="width: 665px; float: left;">
-        <h4>Informações</h4>
+        <b>Informações</b>
         <table style="text-align: right;">
             <tr>
                 <td>
@@ -137,7 +137,7 @@
     </div>
 
     <div style="width: 325px; float: left;">
-        <h4>Categorias</h4>
+        <b>Categorias</b>
         <table style="text-align: right;">
             <tr>
                 <td>
@@ -155,7 +155,7 @@
     </div>
 
     <div style="width: 660px; float: left;">
-        <h4>Valores</h4>
+        <b>Valores</b>
         <table style="text-align: right;">
             <tr>
                 <td>
@@ -206,7 +206,7 @@
     </div>
 
     <div style="width: 990px; float: left;">
-        <h4>Outros</h4>
+        <b>Outros</b>
         <table style="text-align: right; width: 930px">
             <tr>
                 <td>

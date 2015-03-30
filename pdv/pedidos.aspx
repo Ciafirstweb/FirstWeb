@@ -1,54 +1,93 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/principal/Site.Master" CodeBehind="pedidos.aspx.vb" Inherits="FirstWeb.pedidos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <script type="text/javascript">
-    $(document).ready(function () {
-        $('#ContentPlaceHolder1_txtCEP').cep({
-            done: function (endereco) {
-                endereco.tipo_logradouro = endereco.tipo_logradouro + " " + endereco.logradouro + " / " + endereco.bairro + " / " + endereco.cidade + " / " + endereco.uf;
-                document.getElementById("ContentPlaceHolder1_txtEndereco").value = endereco.tipo_logradouro;
-                document.getElementById("ContentPlaceHolder1_txtNumero").focus();
-            },
+        $(document).ready(function () {
+            $('#ContentPlaceHolder1_txtCEP').cep({
+                done: function (endereco) {
+                    endereco.tipo_logradouro = endereco.tipo_logradouro + " " + endereco.logradouro + " / " + endereco.bairro + " / " + endereco.cidade + " / " + endereco.uf;
+                    document.getElementById("ContentPlaceHolder1_txtEndereco").value = endereco.tipo_logradouro;
+                    document.getElementById("ContentPlaceHolder1_txtNumero").focus();
+                },
 
-            // Outras opções, caso você queira
-            autofill: false,
-            cache: false
+                // Outras opções, caso você queira
+                autofill: false,
+                cache: false
+            });
         });
-    });
-</script>
- <script>
-     !function (t) {
-         function n(t) {
-             return t.toString().replace(/\D/g, "").substr(0, 8)
-         } function a(t) {
-             var a = "", e = n(t);
-             return a = e.length > 5 ? e.substr(0, 5) + "-" + e.substr(5, 3) : e
-         } function e(n, a) {
-             t("[" + a + "]").each(function () {
-                 var e = t(this), o = e.attr(a); n[o] && e.val(n[o])
-             })
-         } var o = "http://cep.republicavirtual.com.br/web_cep.php?formato=json&cep=";
-         t.fn.cep = function (r) {
-             var u = {
-                 autofill: !0, autofill_attr: "data-cep", done: function () { }
-             }; return "object" == typeof r ? u = t.extend(u, r) : "function" == typeof r && (u.done = r), this.each(function () {
-                 var r = t(this); r.on("keyup change", function () {
-                     var i = n(r.val()); r.val(a(i)), 8 === i.length && (r.attr("disabled", !0), t.get(o + i, function (t) {
-                         u.autofill && e(t, u.autofill_attr), u.done(t)
-                     }).always(function () { r.attr("disabled", !1) }))
-                 })
-             }), this
-         }
-     }(jQuery)
-</script>
-    <script src="../js/jquery.quicksearch.js" type="text/javascript"></script>
+    </script>
+    <script>
+        !function (t) {
+            function n(t) {
+                return t.toString().replace(/\D/g, "").substr(0, 8)
+            } function a(t) {
+                var a = "", e = n(t);
+                return a = e.length > 5 ? e.substr(0, 5) + e.substr(5, 3) : e
+            } function e(n, a) {
+                t("[" + a + "]").each(function () {
+                    var e = t(this), o = e.attr(a); n[o] && e.val(n[o])
+                })
+            } var o = "http://cep.republicavirtual.com.br/web_cep.php?formato=json&cep=";
+            t.fn.cep = function (r) {
+                var u = {
+                    autofill: !0, autofill_attr: "data-cep", done: function () { }
+                }; return "object" == typeof r ? u = t.extend(u, r) : "function" == typeof r && (u.done = r), this.each(function () {
+                    var r = t(this); r.on("keyup change", function () {
+                        var i = n(r.val()); r.val(a(i)), 8 === i.length && (r.attr("disabled", !0), t.get(o + i, function (t) {
+                            u.autofill && e(t, u.autofill_attr), u.done(t)
+                        }).always(function () { r.attr("disabled", !1) }))
+                    })
+                }), this
+            }
+        }(jQuery)
+    </script>	
+    <script>
+        $(document).ready(function () {
+            var showChar = 1;
+            var ellipsestext = "...";
+            var moretext = "mais";
+            var lesstext = "menos";
+            $('.more').each(function () {
+                var content = $(this).html();
+
+                if (content.length > showChar) {
+
+                    var c = content.substr(0, showChar);
+                    var h = content.substr(showChar - 1, content.length - showChar);
+
+                    var html = c + '<span class="moreelipses">' + ellipsestext + '</span>&nbsp;<span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+                    $(this).html(html);
+                }
+
+            });
+
+            $(".morelink").click(function () {
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext);
+                } else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext);
+                }
+                $(this).parent().prev().toggle();
+                $(this).prev().toggle();
+                return false;
+            });
+        });
+    </script>
     <script type="text/javascript">
         $(function () {
             $('input#ContentPlaceHolder1_txtModelo').quicksearch('table#ContentPlaceHolder1_dgvProduto tbody tr');
         })
-      </script>
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('input#ContentPlaceHolder1_txtNome').quicksearch('table#ContentPlaceHolder1_dgvCliente tbody tr');
+        })
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Label ID="lblErro" runat="server" Text=""></asp:Label>
+    <asp:Label ID="lblErro" runat="server" ></asp:Label>
     <div style="width: 82px; float: left; height: 541px; margin-right: 10px">        
         <table style="text-align: center; width: 82px;">
             <tr><td><asp:ImageButton ID="imgbtnAdicionar" runat="server" ImageUrl="~/images/icons/pedido-adicionar.png" />Adicionar</td></tr>
@@ -56,16 +95,40 @@
             <tr><td><asp:ImageButton ID="imgbtnEditar" runat="server" ImageUrl="../images/icons/pedido-editar.png" />&nbsp;&nbsp;Editar&nbsp;&nbsp;</td></tr>
             <tr><td><asp:ImageButton ID="imgbtnCancelar" runat="server" ImageUrl="../images/icons/pedido-cancelar.png" />Cancelar</td></tr>
             <tr><td><asp:ImageButton ID="imgbtnCliente" runat="server" ImageUrl="../images/icons/pedido-cliente.png" />&nbsp;&nbsp;Cliente&nbsp;&nbsp;</td></tr>
-            <tr><td><asp:ImageButton ID="imgbtnPedido" runat="server" ImageUrl="../images/icons/pedido-pesquisar.png" />&nbsp;Pedido&nbsp;</td></tr>
-            <tr><td><asp:ImageButton ID="imgbtnImprimir" runat="server" ImageUrl="../images/icons/pedido-imprimir.png" />Imprimir</td></tr>
-            <tr><td><asp:Button ID="btnCliente" runat="server" Text="Button" Visible="False" /></td></tr>
-            <tr><td><asp:Button ID="btnProduto" runat="server" Text="Button" Visible="False" /></td></tr>
-            <tr><td><asp:Button ID="btnPagamento" runat="server" Text="Button" Visible="False" /></td></tr>
-        </table>            
-    </div>
-    <br />
+            <tr><td><asp:ImageButton ID="imgbtnPedido" runat="server" ImageUrl="../images/icons/pedido-pesquisar.png" />Pagar</td></tr>
+            <tr><td><asp:ImageButton ID="imgbtnImprimir" runat="server" ImageUrl="../images/icons/pedido-imprimir.png" />Imprimir</td></tr>       
+        </table>    
+        <div style="width: 1px; height: 1px; display: none">
+            <asp:Button ID="btnCliente" runat="server" Text="Cli" />
+            <asp:Button ID="btnProduto" runat="server" Text="Prod" />
+            <asp:Button ID="btnPagamento" runat="server" Text="pag" />
+        </div>
+    </div><div>
+            <div class="comment more" style="width: 520px; float: left;">
+                <b>Cliente</b>
+                        <asp:GridView ID="dgvCliente" runat="server" AutoGenerateColumns="False">
+                            <Columns>
+                                <asp:CommandField HeaderText="Sel" ShowCancelButton="False" ShowSelectButton="True" SelectText="Sel" />
+                                <asp:BoundField DataField="Cod" HeaderText="Cod" />
+                                <asp:BoundField DataField="Documento" HeaderText="Doc" />
+                                <asp:BoundField DataField="Nome" HeaderText="Nome" />
+                            </Columns>
+                        </asp:GridView>
+                </div>
+            <div class="comment more" style="width: 520px; float: left;">
+                <b>Pedido</b>
+                    <asp:GridView ID="dgvPedido" runat="server" AutoGenerateColumns="False">
+                        <Columns>
+                            <asp:CommandField HeaderText="Sel" ShowCancelButton="False" ShowSelectButton="True" SelectText="Sel" />
+                            <asp:BoundField DataField="cod" HeaderText="Cod" />
+                            <asp:BoundField DataField="data" HeaderText="Data" DataFormatString="{0:d/M/yyyy}" />
+                            <asp:BoundField DataField="cliente.apelido" HeaderText="Cliente" />
+                            <asp:BoundField DataField="total" HeaderText="Total" />
+                        </Columns>
+                    </asp:GridView>
+            </div></div>
     <div style="width: 230px; float: left; height: 130px;">
-        <h4>Pedido</h4>
+        <b>Pedido</b>
         <table style="text-align: right;">
             <tr><td><asp:Label ID="lblPedido" runat="server" Text="Pedido:"></asp:Label></td>
             <td style="text-align: left"><asp:TextBox ID="txtPedido" runat="server" Width="150px" TabIndex="1"></asp:TextBox></td></tr>
@@ -85,8 +148,8 @@
     </div>
 
     <div style="width: 950px; float: left; height: 130px;  width:951px;">
-        <h4>Informações</h4>
-        <asp:Panel ID="pnlCliente" runat="server" defaultbutton="imgbtnRemover">
+        <b>Informações</b>
+        <asp:Panel ID="pnlCliente" runat="server" defaultbutton="btnCliente">
         <table style="text-align: right;">       
             <tr>
                 <td><asp:Label ID="lblCodigo" runat="server" Text="Cod:"></asp:Label></td>
@@ -119,7 +182,7 @@
                 <td style="text-align: left"><asp:TextBox ID="txtComplemento" runat="server" Width="146px" TabIndex="11"></asp:TextBox></td>
             </tr>
         </table>
-            </asp:Panel> 
+        </asp:Panel> 
     </div>
  
     <div style="width: 551px; float: left; height: 195px;">
@@ -204,25 +267,32 @@
                 <asp:GridView ID="gdvCarrinho" runat="server" AutoGenerateColumns="False">
                 <Columns>
                     <asp:CommandField HeaderText="Del" DeleteText="Del" ShowDeleteButton="True" />
-                    <asp:BoundField DataField="Barras" HeaderText="Barras" />
-                    <asp:BoundField DataField="Modelo" HeaderText="Descrição" />
-                    <asp:BoundField DataField="Valor" HeaderText="Valor" />
-                    <asp:BoundField DataField="Estoque" HeaderText="Qtd" />
-                    <asp:BoundField DataField="Venda" HeaderText="Total" />
+                    <asp:BoundField DataField="item" HeaderText="Item">
+                    <HeaderStyle Width="1px" />
+                    <ItemStyle Width="1px" />
+                    </asp:BoundField>
+                    <asp:BoundField DataField="produto.Cod" HeaderText="Cod" />
+                    <asp:BoundField DataField="produto.modelo" HeaderText="Descrição" />
+                    <asp:BoundField DataField="produto.Venda" HeaderText="Valor" />
+                    <asp:BoundField DataField="qtd" HeaderText="Qtd" />
+                    <asp:BoundField DataField="total" HeaderText="Total" />
                 </Columns>
             </asp:GridView></asp:Panel></td></tr> 
         </table>
+        
     </div>
 
     <div style="width: 470px; float: left; height: 195px;">
         <asp:Panel ID="pnlPagamento" runat="server" defaultbutton="btnPagamento">
         <table style="text-align: right;">
-            <tr>
+            <tr style="text-align: left;">
                 <td><asp:Label ID="lblForma" runat="server" Text="Forma:"></asp:Label></td>
-                <td colspan="5">
-                    <asp:DropDownList ID="ddlForma" class="drop" runat="server" TabIndex="25" Width="405px">
+                <td colspan="3">
+                    <asp:DropDownList ID="ddlForma" class="drop" runat="server" TabIndex="25" Width="255px">
                         <asp:ListItem Value="0"> </asp:ListItem>
                     </asp:DropDownList></td>
+                <td><asp:Label ID="lblSubTotal" runat="server" Text="Total:"></asp:Label></td>
+                <td><asp:TextBox ID="txtSubTotal" runat="server" Width="80px" TabIndex="26"></asp:TextBox></td>
             </tr>
             <tr style="text-align: center;">
                 <td colspan="2"><asp:Label ID="lblTituloParcelado" runat="server" Text="Parcelado"></asp:Label></td>

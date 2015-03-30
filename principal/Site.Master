@@ -45,9 +45,9 @@
                         <li><a href="../categorias/acessarios.aspx">Acessório</a></li>
                         <li><a href="../categorias/cor.aspx">Cor</a></li>
                         <li><a href="../categorias/complemento.aspx">Complemento</a> </li>
-                        <li><a href="../categorias/ferragem.aspx">Ferragem</a></li>
+                        <%--<li><a href="../categorias/ferragem.aspx">Ferragem</a></li>--%>
                         <li><a href="../categorias/tamanho.aspx">Tamanho</a></li>
-                        <li><a href="../categorias/tecido.aspx">Tecido</a></li>
+                        <%--<li><a href="../categorias/tecido.aspx">Tecido</a></li>--%>
                     </ul>
                 </li>
                 <li><a href="#">Ferramentas</a>
