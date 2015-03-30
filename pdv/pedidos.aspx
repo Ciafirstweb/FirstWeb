@@ -95,7 +95,7 @@
             <tr><td><asp:ImageButton ID="imgbtnEditar" runat="server" ImageUrl="../images/icons/pedido-editar.png" />&nbsp;&nbsp;Editar&nbsp;&nbsp;</td></tr>
             <tr><td><asp:ImageButton ID="imgbtnCancelar" runat="server" ImageUrl="../images/icons/pedido-cancelar.png" />Cancelar</td></tr>
             <tr><td><asp:ImageButton ID="imgbtnCliente" runat="server" ImageUrl="../images/icons/pedido-cliente.png" />&nbsp;&nbsp;Cliente&nbsp;&nbsp;</td></tr>
-            <tr><td><asp:ImageButton ID="imgbtnPedido" runat="server" ImageUrl="../images/icons/pedido-pesquisar.png" />Pagar</td></tr>
+            <tr><td><asp:ImageButton ID="imgbtnPedido" runat="server" ImageUrl="../images/icons/pedido-pagamento.png" />Pagar</td></tr>
             <tr><td><asp:ImageButton ID="imgbtnImprimir" runat="server" ImageUrl="../images/icons/pedido-imprimir.png" />Imprimir</td></tr>       
         </table>    
         <div style="width: 1px; height: 1px; display: none">
